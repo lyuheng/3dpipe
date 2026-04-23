@@ -50,7 +50,7 @@ Therefore this generated dataset contains 1000 vessels and 200,000 nuclei
 ./tdbase convert bar_v_nv1000_nu200_vs100_r30.dt foo_v_nv1000_nu200_vs100_r30_cm1.dt
 ```
 
-## Running on Generated Datasets
+## Running on Generated Dataset
 
 - Conduct a 10-NN join.
 ```console
