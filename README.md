@@ -44,7 +44,7 @@ Therefore this generated dataset contains 1000 vessels and 200,000 nuclei
 ./simulator -n ../../data/nuclei.pt -v ../../data/vessel.pt -o bar --nv 1000 --nu 200
 ```
 
-2. Convert .dt files into decoded format for better performance but with higher storage cost. We are working on improving the decoding efficiency with partial decoding and GPU accelerating.
+2. Convert .dt files into decoded format for better performance but with higher storage cost.
 ```console
 ./tdbase convert bar_n_nv1000_nu200_vs100_r30.dt foo_n_nv1000_nu200_vs100_r30_cm1.dt
 ./tdbase convert bar_v_nv1000_nu200_vs100_r30.dt foo_v_nv1000_nu200_vs100_r30_cm1.dt
