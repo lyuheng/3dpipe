@@ -16,3 +16,4 @@ build/
 *.autotools
 *.sln
 *.vcxproj*
+.DS_Store
