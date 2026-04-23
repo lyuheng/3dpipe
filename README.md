@@ -33,18 +33,18 @@ cmake --build build
 ```
 
 ## Generating Synthetic Dataset 
-> Generate two .dt files, one for *nuclei* (bar_n_nv1000_nu200_vs100_r30_cm1.dt) and one for *vessel* (bar_v_nv1000_nu200_vs100_r30_cm1.dt). 
+1. Generate two .dt files, one for *nuclei* (bar_n_nv1000_nu200_vs100_r30_cm1.dt) and one for *vessel* (bar_v_nv1000_nu200_vs100_r30_cm1.dt). 
 
-`nv` specifies the total number of vessels in the dataset.
+- `nv` specifies the total number of vessels in the dataset.
 
-`nu` specifies the number of nuclei around *each* vessel. 
+- `nu` specifies the number of nuclei around *each* vessel. 
 
 Therefore this generated dataset contains 1000 vessels and 200,000 nuclei
 ```console
 ./simulator -n ../../data/nuclei.pt -v ../../data/vessel.pt -o bar --nv 1000 --nu 200
 ```
 
-> Convert .dt files into decoded format for better performance but with higher storage cost. We are working on improving the decoding efficiency with partial decoding and GPU accelerating.
+2. Convert .dt files into decoded format for better performance but with higher storage cost. We are working on improving the decoding efficiency with partial decoding and GPU accelerating.
 ```console
 ./tdbase convert bar_n_nv1000_nu200_vs100_r30.dt foo_n_nv1000_nu200_vs100_r30_cm1.dt
 ./tdbase convert bar_v_nv1000_nu200_vs100_r30.dt foo_v_nv1000_nu200_vs100_r30_cm1.dt
