@@ -3,8 +3,6 @@
 ## Introduction
 3DPipe is a pipelined GPU framework for scalable spatial join over polyhedral objects. 3DPipe exploits GPU parallelism across both filtering and refinement stages, incorporates a multi-level pruning strategy for efficient candidate reduction, and employs chunked streaming to handle datasets exceeding GPU memory. Its pipelined execution overlaps CPU data preparation, host-device data transfer, and GPU computation to improve throughput. 
 
-More technical details can be found at: https://arxiv.org/abs/2604.19982.
-
 ## Dependencies
  - CMake 
  - NVCC
